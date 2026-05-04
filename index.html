@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio — Daffa Yusuf Mahendra</title>
+    <meta name="description" content="Personal portfolio website showcasing my projects and skills in HTML, CSS, and JavaScript.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER + NAVIGATION -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <h1 class="logo">Daffa Yusuf Mahendra</h1>
+
+            <!-- Hamburger Button (visible on mobile) -->
+            <button id="menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-list">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul id="nav-list" role="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" aria-label="Hero Section">
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h2 class="hero-name">Daffa Yusuf Mahendra</h2>
+            <p class="hero-subtitle">A Front-End Developer passionate about building beautiful and interactive web experiences.</p>
+            <a href="#projects" class="hero-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" aria-labelledby="about-heading">
+        <div class="section-container">
+            <h2 id="about-heading" class="section-title">About Me</h2>
+            <div class="about-content">
+                <img
+                    src="https://ui-avatars.com/api/?name=Daffa+Yusuf&background=6c63ff&color=fff&size=150&rounded=true"
+                    alt="Profile picture of Daffa Yusuf Mahendra"
+                    class="about-avatar"
+                    width="150"
+                    height="150"
+                >
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer currently learning front-end development using HTML, CSS, and JavaScript. I enjoy crafting clean, responsive, and user-friendly websites.</p>
+                    <p>I'm enrolled in the Coursera <strong>Introduction to Web Development</strong> course and am building my portfolio to document my journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-heading">
+        <div class="section-container">
+            <h2 id="projects-heading" class="section-title">Projects</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" role="group" aria-label="Filter projects by category">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+
+            <div class="project-list">
+
+                <article data-category="html-css" aria-label="Project 1: Simple Landing Page">
+                    <figure>
+                        <img
+                            src="https://via.placeholder.com/300x180/6c63ff/ffffff?text=Landing+Page"
+                            alt="Screenshot of Project 1 — a simple landing page built with HTML and CSS"
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="project-info">
+                        <h3>Simple Landing Page</h3>
+                        <span class="project-tag">HTML & CSS</span>
+                        <p>A clean, responsive landing page built using HTML5 semantic elements and modern CSS styling.</p>
+                    </div>
+                </article>
+
+                <article data-category="javascript" aria-label="Project 2: Interactive Portfolio">
+                    <figure>
+                        <img
+                            src="https://via.placeholder.com/300x180/ff6584/ffffff?text=JS+Portfolio"
+                            alt="Screenshot of Project 2 — an interactive portfolio website using JavaScript"
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="project-info">
+                        <h3>Interactive Portfolio</h3>
+                        <span class="project-tag">JavaScript</span>
+                        <p>A dynamic portfolio site with JavaScript-powered interactivity, smooth scrolling, and form validation.</p>
+                    </div>
+                </article>
+
+                <article data-category="html-css" aria-label="Project 3: Responsive Blog Layout">
+                    <figure>
+                        <img
+                            src="https://via.placeholder.com/300x180/43b89c/ffffff?text=Blog+Layout"
+                            alt="Screenshot of Project 3 — a responsive blog layout"
+                            loading="lazy"
+                        >
+                    </figure>
+                    <div class="project-info">
+                        <h3>Responsive Blog Layout</h3>
+                        <span class="project-tag">HTML & CSS</span>
+                        <p>A multi-column blog layout using CSS Flexbox and Grid, fully responsive across all screen sizes.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+        <div class="section-container">
+            <h2 id="skills-heading" class="section-title">Skills</h2>
+            <ul class="skills-list" role="list">
+                <li class="skill-item">
+                    <span class="skill-icon" aria-hidden="true">🌐</span>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 90%">
+                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-icon" aria-hidden="true">🎨</span>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 80%">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-icon" aria-hidden="true">⚡</span>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 70%">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <span class="skill-icon" aria-hidden="true">📱</span>
+                    <span class="skill-name">Responsive Design</span>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Design proficiency 75%">
+                        <div class="skill-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <div class="section-container">
+            <h2 id="contact-heading" class="section-title">Contact Me</h2>
+            <p class="contact-subtitle">Have a question or want to work together? Send me a message!</p>
+
+            <form id="contact-form" novalidate aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="e.g. Daffa Yusuf"
+                        required
+                        autocomplete="name"
+                        aria-required="true"
+                    >
+                    <span class="error-msg" id="name-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="e.g. hello@example.com"
+                        required
+                        autocomplete="email"
+                        aria-required="true"
+                    >
+                    <span class="error-msg" id="email-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span aria-hidden="true">*</span></label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                        aria-required="true"
+                    ></textarea>
+                    <span class="error-msg" id="message-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+                <p id="form-success" class="success-msg" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <p>&copy; 2026 Daffa Yusuf Mahendra. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- LIGHTBOX MODAL (created by JS, referenced here for clarity) -->
+
+    <script src="script.js"></script>
+</body>
+</html>
